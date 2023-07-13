@@ -1,12 +1,12 @@
 #include <stdio.h>
 /**
- * main - no arguments needed
+ * main : prints the line string
  *
- * @char : line to be printed
+ * @line : String to be printed by the puts function
  *
- * puts functions taking the sting line as parameter
+ * puts : functions taking the sting line as parameter
  *
- * return : always 0 uppon success
+ * Return : always 0 uppon success
  */
 int main(void)
 {
