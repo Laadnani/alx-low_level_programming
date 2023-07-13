@@ -8,6 +8,6 @@ int main (void)
 {
 	char print[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 
-	fput(print, stdout);
+	fputs(print, stdout);
 	return (1);
 }
