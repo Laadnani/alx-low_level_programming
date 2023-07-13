@@ -2,11 +2,7 @@
 /**
  * main - prints the line string
  *
- * puts : functions taking the sting line as parameter
- *
- * Return : always 0 uppon success
- *
- * Description: prints the variable 
+ * Return: prints the variable 
  */
 int main(void)
 {
