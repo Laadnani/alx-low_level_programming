@@ -6,8 +6,8 @@
  */
 int main(void)
 {
-	char print[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	char pnt[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	fputs(print, stdout);
+	fputs(pnt, stdout);
 	return (1);
 }
