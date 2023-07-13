@@ -12,11 +12,11 @@ int main(void)
 	long long int d;
 	float e;
 
-	printf("Size of a char : %c byte(s)\n", sizeof(a));
+	printf("Size of a char : %s byte(s)\n", sizeof(a));
 	printf("Size of a int : %i byte(s)\n", sizeof(b));
 	printf("Size of a long int : %i byte(s)\n", sizeof(c));
 	printf("Size of a long long int : %i byte(s)\n", sizeof(d));
-	printf("Size of a float : %f byte(s)\n", sizeof(e));
+	printf("Size of a float : %g byte(s)\n", sizeof(e));
 
 	return (0);
 }
