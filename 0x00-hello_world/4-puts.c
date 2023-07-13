@@ -2,7 +2,7 @@
 /**
  * main - prints the line string
  *
- * Return: prints the variable 
+ * Return: prints the variable
  */
 int main(void)
 {
