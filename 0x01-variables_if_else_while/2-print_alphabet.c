@@ -4,7 +4,8 @@
  *
  * Return: output 0 when successful
  */
-int main(void) {
+int main(void)
+{
 
 	char az[] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
