@@ -6,13 +6,12 @@
  */
 int main(void)
 {
+	int i = 97;
 
-	char az[] = "abcdefghijklmnopqrstuvwxyz";
-	int i;
-
-	for (i = 0; i <= 26; i++)
+	while (i <=122)
 	{
-		putchar(az[i]);
+		putchar(i);
+		i++;
 	}
 	putchar('\n');
 	return (0);
