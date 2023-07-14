@@ -7,7 +7,7 @@
 int main(void)
 {
 
-	int az[] = "abcdefghijklmnopqrstuvwxyz";
+	char az[] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 
 	for (i = 0; i <= 26; i++)
