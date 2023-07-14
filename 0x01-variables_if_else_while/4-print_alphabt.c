@@ -10,10 +10,10 @@ int main(void)
 
 	while (i <= 122)
 	{
-		for (i == 101 || i == 113)
+		for (i == 101 && i == 113)
 		{
-			continue;
 			i++;
+			continue;
 		}
 		putchar(i);
 		i++;
