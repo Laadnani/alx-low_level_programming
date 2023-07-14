@@ -8,6 +8,8 @@ int main (void) {
 
 	char az[] = "abcdefghijklmnopqrstuvwxyz";
 	for ( i = 0; i <= 26; i++)
+	{
 		putchar(az[i]);
+	}
 	return (0);
 }
