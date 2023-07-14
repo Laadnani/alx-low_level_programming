@@ -14,5 +14,6 @@ int main(void)
 	{
 		putchar(az[i]);
 	}
+	putchar('\n');
 	return (0);
 }
