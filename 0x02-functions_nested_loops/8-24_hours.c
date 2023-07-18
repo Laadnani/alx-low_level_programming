@@ -6,22 +6,22 @@
  */
 void jack_bauer(void)
 {
+	int hour;
 	int min;
-	int sec;
 
-	for (min = 0; min <= 23; min++)
+	for (hour = 0; hour <= 23; hour++)
 	{
-		for (sec = 0; sec <= 59; sec++)
+		for (min = 0; min <= 59; min++)
 		{
-			if (min < 10)
+			if (hour < 10)
 			{
-				_putchar('0');
+				_putchar(0);
 			}
 			_putchar(min + '0');
 			_putchar(':');
 			if (min < 10)
 			{
-				_putchar('0');
+				_putchar(0);
 			}
 			_putchar(sec + '0');
 			_putchar('\n');
