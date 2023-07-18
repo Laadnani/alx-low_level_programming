@@ -9,9 +9,9 @@ void jack_bauer(void)
 	int min;
 	int sec;
 
-	for (min = '0'; min <= '23'; min++)
+	for (min = 0; min <= 23; min++)
 	{
-		for (sec = '0'; sec <= '59'; sec++)
+		for (sec = 0; sec <= 59; sec++)
 		{
 			if (min < 10)
 			{
