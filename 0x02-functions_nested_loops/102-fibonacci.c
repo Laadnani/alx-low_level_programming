@@ -6,14 +6,14 @@
  */
 int main(void)
 {
-	float a = 1;
-	float b = 2;
-	float result;
+	signed float a = 1;
+	signed float b = 2;
+	signed float result;
 	int i;
 
 	for (i = 0; i <= 49; i++)
 	{
-		printf("%.0f, ", a);
+		printf("%.0f, ", signed  a);
 		result = a + b;
 		a = b;
 		b = result;
