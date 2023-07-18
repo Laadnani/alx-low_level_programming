@@ -19,7 +19,7 @@ int main(void)
 		b = result;
 		if (i == 49)
 		{
-			printf('\n');
+			printf("\n");
 		}
 		else
 		{
