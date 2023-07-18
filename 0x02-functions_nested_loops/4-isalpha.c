@@ -6,7 +6,7 @@
  *
  * Return: 1 if the parameter is alphabetic charac or 0 otherwise
  */
-int _islpha(int c)
+int _isalpha(int c)
 {
 	if (c >= 65 && c <= 90)
 	{
