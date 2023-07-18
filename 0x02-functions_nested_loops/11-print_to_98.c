@@ -8,7 +8,7 @@ void print_to_98(int n)
 {
 	int val;
 
-	if (n = 98)
+	if (n == 98)
 	{
 		_putchar((n / 10) + '0');
 		_putchar((n % 10) + '0');
@@ -30,6 +30,7 @@ void print_to_98(int n)
 			_putchar(',');
 			_putchar(' ');
 		}
+	}
 	else if (n < 98)
 	{
 		for (val = n; val <= 98; val++)
