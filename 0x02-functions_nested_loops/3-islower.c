@@ -2,6 +2,8 @@
 /**
  * _islower -entry point
  *
+ * @c: parameter to be checked
+ *
  * Return: 1 when lowercase and 0 if not
  */
 int _islower(char c)
