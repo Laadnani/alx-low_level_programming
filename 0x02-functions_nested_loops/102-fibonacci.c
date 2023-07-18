@@ -13,10 +13,18 @@ int main(void)
 
 	for (i = 0; i <= 49; i++)
 	{
-		printf("%ld, ", a);
+		printf("%ld", a);
 		result = a + b;
 		a = b;
 		b = result;
+		if (i == 49)
+		{
+			printf('\n');
+		}
+		else
+		{
+			printf(", ");
+		}
 	}
 	return (0);
 }
