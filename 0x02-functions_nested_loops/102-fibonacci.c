@@ -10,16 +10,16 @@
  *
  * Return: always 0;
  */
-int main (void)
+int main(void)
 {
-	int a = 1;
-	int b = 1;
-	int result;
+	float a = 1;
+	float b = 2;
+	float result;
 	int i;
 
 	for (i = 0; i <= 49; i++)
 	{
-		printf("%d\n", a);
+		printf("%f, ", a);
 		result = a + b;
 		a = b;
 		b = result;
