@@ -17,7 +17,7 @@ int main (void)
 	int result;
 	int i;
 
-	for (i == 0; i <= 49; i++)
+	for (i = 0; i <= 49; i++)
 	{
 		printf("%d\n", a);
 		result = a + b;
