@@ -2,7 +2,7 @@
 /**
  * _isalpha - entry point
  *
- * @c: parameter to be checked 
+ *@c: parameter to be checked 
  *
  * Return: 1 if the parameter is alphabetic charac or 0 otherwise
  */
