@@ -1,47 +1,34 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
  * print_to_98 - entry point
  *
- * Return: Void
+ * @n: number to start the count from
  */
 void print_to_98(int n)
 {
-	int val;
+	int i,j;
 
-	if (n == 98)
+	if (n <= 98)
 	{
-		_putchar((n / 10) + '0');
-		_putchar((n % 10) + '0');
-		_putchar('\n');
+		for (i = n; i <= 98; i++)
+		{
+			if ( i != 98)
+			{
+				printf("%d, ", i);
+			}
+			else if (i == 98)
+			{
+				printf("%d\n", i);
+			}
+		}
 	}
 	else if (n > 98)
 	{
-		for (val = n; val >= 98; val--)
+		for (j = n; j >= 98; j--)
 		{
-			if (val > 100)
-			{
-				_putchar((val / 100) + '0');
-				_putchar((val / 10) + '0');
-				_putchar((val % 10) + '0');
-				_putchar(',');
-				_putchar(' ');
-			}
-			_putchar((val / 10) + '0');
-			_putchar((val % 10) + '0');
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, ", j);
 		}
-		_putchar('\n');
-	}
-	else if (n < 98)
-	{
-		for (val = n; val <= 98; val++)
-		{
-			_putchar((val / 10) + '0');
-			_putchar((val % 10) + '0');
-			_putchar(',');
-			_putchar(' ');
-		}
-		_putchar('\n');
 	}
 }
