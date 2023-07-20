@@ -4,6 +4,7 @@
  * print_numbers - print numbers from 0 till 9
  *
  */
+
 void print_numbers(void)
 {
 	int i = 48;
