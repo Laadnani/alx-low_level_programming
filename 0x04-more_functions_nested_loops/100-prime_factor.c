@@ -3,7 +3,7 @@
 
 /**
  * main - entry point for laaaarge number
- * 
+ *
  * Return: Always 0
  */
 int main(void)
