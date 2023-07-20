@@ -3,6 +3,8 @@
 /**
  * print_line - printing lineees
  *
+ * @n: how many time the line will be printed
+ *
  * Return: always 0
  */
 void print_line(int n)
