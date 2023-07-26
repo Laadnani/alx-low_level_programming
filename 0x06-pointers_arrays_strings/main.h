@@ -9,3 +9,4 @@ char *leet(char *);
 int _putchar(int c);
 char *rot13(char *);
 void print_buffer(char *b, int size);
+void print_number(int n);
