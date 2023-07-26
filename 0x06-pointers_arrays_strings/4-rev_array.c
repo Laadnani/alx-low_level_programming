@@ -2,11 +2,11 @@
 
 /**
  * reverse_array - reverse the index on an array
- *
+ * @a: array toittirate from
  * @n: integer in the array
  */
 
-void reverse_array(int* a, int n)
+void reverse_array(int *a, int n)
 {
 	int i;
 	int temp;
