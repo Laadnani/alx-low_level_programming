@@ -3,12 +3,12 @@
 /**
  * *cap_string - capitalize letter in the beg of words
  *
- * @string: string to be ittirating from
+ * @str: string to be ittirating from
  *
  * Return: capitalized lines
  */
 
-char *cap_string(char *string)
+char *cap_string(char *str)
 {
 	int index = 0;
 
