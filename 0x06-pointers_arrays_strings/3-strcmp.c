@@ -3,6 +3,9 @@
 /**
  * _strcmp - comparing two strings
  *
+ * @s1: first string to be compared
+ * @s2: second string to be compared
+ *
  * Return: 0 if the stings are equal, 15 or -15 if different
  */
 int _strcmp(char *s1, char *s2)
@@ -14,17 +17,19 @@ int _strcmp(char *s1, char *s2)
 	{
 		if (s1[i] == s2[i])
 		{
-			i++;
 			result = 0;
 		}
 		else if (s1[i] < s2[i])
 		{
 			result = -15;
+			break;
 		}
 		else if (s1[i] > s2[i])
 		{
 			result = 15;
+			break;
 		}
-	}
+		i++;
+	}	
 	return (result);
 }
