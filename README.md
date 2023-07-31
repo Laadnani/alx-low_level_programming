@@ -1,2 +1,1 @@
-# alx-low_level_programming
-alx-low_level_programming C programming repo
+C for pointers pointer of pointer and arrays in 2D and 3D.
