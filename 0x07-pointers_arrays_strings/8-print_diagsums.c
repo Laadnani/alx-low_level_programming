@@ -8,7 +8,7 @@
  * @size: size of the array
  */
 
-void print_diagsums(int *a; int size)
+void print_diagsums(int *a, int size)
 {
 	int i;
 	int first = 0;
@@ -22,7 +22,5 @@ void print_diagsums(int *a; int size)
 	{
 		second += a[i * size + (size - i - 1)]; 
 	}
-	printf("%d", first);
-	printf(", ");
-	printf("%d", second);
+	printf("%d, %d\n", first, second);
 }
