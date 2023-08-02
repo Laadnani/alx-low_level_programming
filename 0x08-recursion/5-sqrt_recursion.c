@@ -6,20 +6,29 @@
  * @x: int to find
  * Return: Natural sqrt of x
  */
-
+int solution(int x, int y);
 int _sqrt_recursion(int x)
 {
-	int sum;
-	int y;
+	return (solution(x, 1)); 
+}
 
-	while (x > 0)
+/** 
+ * solution - compare whole number until finding the natural sqr root
+ *
+ * @x: root number
+ * @y: value number to find
+ * Return: natural number of x or -1 if unavailable
+ */
+
+int solution(int x, int y)
+{
+	if (y * y == x)
 	{
-		y = 1;
-		sum = 1 + _sqrt_recursion(x - (y + 2));
+		return (y);
+	} else if (y * y < x)
+	{
+		return (solution(x, y + 1));
 	}
-	if (x == 0)
-	{
-		return (sum - _sqrt_recursion(x - (y + 2)));
-	} else
+	else
 		return (-1);
 }
