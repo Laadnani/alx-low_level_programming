@@ -4,15 +4,16 @@
  * _sqrt_recursion - return natural square root of a number
  *
  * @x: int to find
+ * @y: value naumber to find
  * Return: Natural sqrt of x
  */
 int solution(int x, int y);
 int _sqrt_recursion(int x)
 {
-	return (solution(x, 1)); 
+	return (solution(x, 1));
 }
 
-/** 
+/**
  * solution - compare whole number until finding the natural sqr root
  *
  * @x: root number
