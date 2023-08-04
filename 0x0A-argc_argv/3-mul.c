@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- *main - print the multiplication of 2 args
+ * main - print the multiplication of 2 args
  *
  * @argc: argument count
  * @argv: argument vector
