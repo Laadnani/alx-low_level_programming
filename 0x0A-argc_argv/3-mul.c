@@ -15,13 +15,13 @@ int main(int argc, char *argv[])
 	{
 		printf("Error\n");
 		return (1);
-	} else {
+	}
+
 		int  sum;
-        	int a = atoi(argv[1]);
-       		int b = atoi(argv[2]);
+		int a = atoi(argv[1])
+		int b = atoi(argv[2]);
 
 		sum = a * b;
 		printf("%d\n", sum);
 		return (0);
-	}
 }
