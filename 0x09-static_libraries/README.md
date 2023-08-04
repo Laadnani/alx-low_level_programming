@@ -1,1 +1,1 @@
-static and shared lybraries
+librariiiiies
