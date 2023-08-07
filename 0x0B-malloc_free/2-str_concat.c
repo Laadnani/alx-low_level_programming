@@ -27,6 +27,10 @@ char *str_concat(char *s1, char *s2)
 	for (mem2 = 0; s2[mem2] != '\0'; mem2++)
 	;
 	i = malloc((mem1 + mem2) * sizeof(char) + 1);
+	if (i == 0)
+	{
+		return ('\0');
+	}
 	for (_wrt = 0; _wrt <= (mem1 + mem2); _wrt++)
 	{
 		if (_wrt < mem1)
