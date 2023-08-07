@@ -29,18 +29,14 @@ char *str_concat(char *s1, char *s2)
 	i = malloc((mem1 + mem2) * sizeof(char) + 1);
 	if (i == 0)
 	{
-		return ('\0');
+		return (0);
 	}
 	for (_wrt = 0; _wrt <= (mem1 + mem2); _wrt++)
 	{
 		if (_wrt < mem1)
-		{
 			i[_wrt] = s1[_wrt];
-		}
 		else
-		{
 			i[_wrt] = s2[_wrt - mem1];
-		}
 	}
 	i[_wrt] = '\0';
 	return (i);
