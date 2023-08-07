@@ -4,7 +4,7 @@
 /**
  * *_strdup - entry point
  *
- * @*str: strig pointer duplicate
+ * @str: strig pointer duplicate
  * Return: duplicate of the strinc if enough memory
  */
 
@@ -18,13 +18,14 @@ char *_strdup(char *str)
 	{
 		return ('\0');
 	}
-	for (; str[_size] != '\0'; _size++);
-	i = malloc(sizeof(*str) + 1 * _size );
+	for (; str[_size] != '\0'; _size++)
+	;
+	i = malloc(sizeof(*str) + 1 * _size);
 	if (i == 0)
 	{
 		return ('\0');
 	}
-	else 
+	else
 	{
 		for (j = 0; j < _size; j++)
 			i[j] = str[j];
