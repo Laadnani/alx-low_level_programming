@@ -16,15 +16,15 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		s1 = '\0';
+		s1 = "\0";
 	}
 	if (s2 == NULL)
 	{
-		s2 = '\0';
+		s2 = "\0";
 	}
-	for (mem1 = 0; s1[mem1] != '\0'; mem1++)
+	for (mem1 = 0; s1[mem1] < '\0'; mem1++)
 	;
-	for (mem2 = 0; s2[mem2] != '\0'; mem2++)
+	for (mem2 = 0; s2[mem2] < '\0'; mem2++)
 	;
 	i = malloc((mem1 + mem2) * sizeof(char) + 1);
 	if (i == 0)
