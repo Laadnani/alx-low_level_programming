@@ -2,35 +2,28 @@
 #include <stdlib.h>
 
 /**
- * *string_nconcat - concat 2 string till n bite of s2
- *
- * @s1: first string to concat
- * @s2: second string to concat
- * @n: number of bytes to concat from s2
- * Return: concat strings s1 and s2
+ * string_nconcat - concatenate two strings up to n bytes of s2
+ * @s1: first string
+ * @s2: second string
+ * @n: number of bytes to concatenate from s2
+ * Return: concatenated strings s1 and s2, or NULL on failure
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i = 0;
-	unsigned int j = 0;
+	unsigned int i = 0, j = 0;
 	unsigned int ik, jk;
 	char *c;
 
 	if (s1 == NULL)
-	{
 		s1 = "";
-	}
 	if (s2 == NULL)
-	{
 		s2 = "";
-	}
-	for (ik = i ; s1[ik] != '\0'; ik++)
+	for (ik = 0; s1[ik] != '\0'; ik++)
 	;
-	for (jk = 0; s2[jk] != '\0'; jk++)
+	for (jk = 0; s2[jk] != '\0' && jk < n; jk++)
 	;
-	c = malloc(ik + n + 1);
-
+	c = malloc(sizeof(char) * (ik + jk + 1));
 	if (c == NULL)
 	{
 		return (NULL);
@@ -39,11 +32,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		c[i] = s1[i];
 	}
-	for (; s2[j] && j <= n; j++)
+	for (j = 0; s2[j] != '\0' && j < n; j++)
 	{
-		c[i] = s2[j];
-		i++;
+		c[i + j] = s2[j];
 	}
-	c[i] = '\0';
+	c[i + j] = '\0';
 	return (c);
 }
