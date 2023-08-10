@@ -17,13 +17,13 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return(NULL);
 	}
-	c = malloc(size * nmemb);
+	c = malloc (size * nmemb);
 	if (c == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
 	nmemb *= size;
-	while(nmemb--)
+	while (nmemb--)
 	{
 		c[nmemb] = 0;
 	}
