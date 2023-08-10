@@ -34,13 +34,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (c == NULL)
 	{
 		return (NULL);
-		exit()
 	}
 	for (; s1[i] != '\0'; i++)
 	{
 		c[i] = s1[i];
 	}
-	for (; j <= n; j++)
+	for (; s2[j] && j <= n; j++)
 	{
 		c[i] = s2[j];
 		i++;
