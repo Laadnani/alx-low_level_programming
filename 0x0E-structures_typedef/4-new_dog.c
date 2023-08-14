@@ -2,6 +2,30 @@
 #include "dog.h"
 
 /**
+ * _strlen - mimicing strlen function
+ * @src: source string to copy
+ * @dest: destination of copied string
+ * Return: copied string dest
+ */
+
+char *_strlen(char *src, char *dest)
+{
+	int i, j;
+
+	j = 0;
+	while (src[j] != '\0')
+	{
+		j++;
+	}
+	for (i = 0; i < j; i++)
+	{
+		dest[i] = src[i];
+	}
+	dest[i] = '\0';
+	return (dest);
+}
+
+/**
  * *new_dog - create a new dog struct
  * @name: name to be copied
  * @age: age to be copied
@@ -36,18 +60,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog->name);
 		return (NULL);
 	}
-	while (*name != '\0')
-	{
-		dog->name = name;
-		dog->name++;
-		name++;
-	}
-	while (*owner != '\0')
-	{
-		dog->owner = owner;
-		dog->owner++;
-		owner++;
-	}
+	_strlen(name, dog->name);
+	_strlen(owner, dog->owner);
 	dog->age = age;
 	return (dog);
 }
