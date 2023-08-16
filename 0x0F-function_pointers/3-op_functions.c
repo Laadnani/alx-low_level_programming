@@ -1,5 +1,4 @@
-#include "calc.h"
-#include <stddef.h>
+#include "3-calc.h"
 
 /**
  * op_add - adition operation
