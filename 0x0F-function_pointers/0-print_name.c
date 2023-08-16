@@ -3,10 +3,13 @@
 /**
  * print_name - allocate the name to a function
  * @name: char to allocate
- * @f: function 
+ * @f: function
  */
 
 void print_name(char *name, void (*f)(char *))
 {
-	f(name);
+	if(name)
+	{
+		f(name);
+	}
 }
