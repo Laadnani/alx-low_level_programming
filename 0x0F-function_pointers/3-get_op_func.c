@@ -3,8 +3,7 @@
 
 /**
  * get_op_func - allocate a function to a string op
- * @a: operand 1
- * @b: operand 2
+ * @s: operator
  * Return: opreration function with 2 ints
  */
 
@@ -22,7 +21,7 @@ int (*get_op_func(char *s))(int, int)
 
 	while (i < 5)
 	{
-		if(ops[i].op[0] == s[0] && s && !s[1])
+		if (ops[i].op[0] == s[0] && s && !s[1])
 		{
 			return (ops[i].f);
 		}
