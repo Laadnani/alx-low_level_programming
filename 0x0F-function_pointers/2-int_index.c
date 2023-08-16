@@ -18,6 +18,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 		if (size <= 0)
 		{
 			count = -1;
+			break;
 		}
 		for (i = 0; i < size; i++)
 		{
