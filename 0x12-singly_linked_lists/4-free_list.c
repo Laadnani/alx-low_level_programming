@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free-list - free the memory of all the nodes
+ * free_list - free the memory of all the nodes
  * @head: node address pointer
  */
 
