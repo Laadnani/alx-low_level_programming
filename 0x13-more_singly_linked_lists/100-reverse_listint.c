@@ -16,7 +16,7 @@ listint_t *reverse_recursive(listint_t *current, listint_t *next)
 	}
 	temp = (*current).next;
 	(*current).next = next;
-	return reverse_recursive(temp, current);
+	return (reverse_recursive(temp, current));
 }
 
 /**
