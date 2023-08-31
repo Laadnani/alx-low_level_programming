@@ -8,12 +8,12 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int i = 1;
-	unsigned long int bin = 0; 
-	unsigned long int rem = 1;
-
-	while (n != 0)
+	if (n)
 	{
-
+		*n |= (1UL << index);
+		return (1);
+	} else
+	{ 
+		return (-1);
 	}
 }
