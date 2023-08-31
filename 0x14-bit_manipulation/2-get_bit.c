@@ -13,7 +13,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	unsigned long int rem = 1;
 	unsigned long int bin = 0;
 
-	while (n > 0)
+	while (n != 0)
 	{
 		rem = n % 2;
 		bin += rem * i;
