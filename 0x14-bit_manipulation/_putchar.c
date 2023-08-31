@@ -6,7 +6,7 @@
  * Return: printed char
  */
 
-int _putchar(char *s)
+unsigned long int _putchar(char s)
 {
-	return(wrtie(1, &c, 1));
+	return(write(1, &s, 1));
 }
