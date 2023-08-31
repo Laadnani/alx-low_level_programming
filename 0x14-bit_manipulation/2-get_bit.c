@@ -20,7 +20,7 @@ int get_bit(unsigned long int n, unsigned int index)
 		n /= 2;
 		i *= 10;
 	}
-	if (index < (i / 10))
+	if (index <= (i / 10))
 	{
 		bin = bin >> index;
 		return (bin & 1);
