@@ -2,7 +2,7 @@
 
 /**
  * _strln - mimic the strlen func
- * @str - string to check
+ * @str: string to check
  * Return: lenght of the string
  */
 
@@ -20,8 +20,8 @@ ssize_t _strln(const char *str)
 
 /**
  * create_file - create a new file
- * @filename : new file to create
- * text_content - text to add to the new file
+ * @filename: new file to create
+ * @text_content: text to add to the new file
  * Return: 1 upon success or -1 otherwise
  */
 
