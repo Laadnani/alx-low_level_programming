@@ -44,6 +44,7 @@ int main(int argc, char *argv[])
 	if (bytes_r == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: can't read from %s\n", argv[1]);
+		exit(98);
 	}
 	close(src_fd);
 	if (close(src_fd) == -1)
