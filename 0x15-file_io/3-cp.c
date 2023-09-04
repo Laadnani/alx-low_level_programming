@@ -17,22 +17,22 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO,"Usage: cp file_from file_to\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	src_fd = open(argv[1], O_RDONLY);
 	if (src_fd == -1)
 	{
-		dprintf(STDERR_FILENO,"Error: can't read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	dest_fd = open(argv[2],O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	dest_fd = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (dest_fd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: can't write to file %s\n", argv[2]);
 		exit(99);
 	}
-	while(bytes_r = read(src_fd, buf, BUFFER) > 0)
+	while ((bytes_r = read(src_fd, buf, BUFFER)) > 0)
 	{
 		bytes_w = write(dest_fd, buf, bytes_r);
 		if (bytes_w == -1)
