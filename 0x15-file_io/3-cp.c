@@ -46,13 +46,11 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: can't read from %s\n", argv[1]);
 		exit(98);
 	}
-	close(src_fd);
 	if (close(src_fd) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", src_fd);
 		exit(100);
 	}
-	close(dest_fd);
 	if (close(dest_fd) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", dest_fd);
