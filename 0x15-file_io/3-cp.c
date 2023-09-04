@@ -32,13 +32,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: can't write to file %s\n", argv[2]);
 		exit(99);
 	}
-	bytes_r = read(src_fd, buf, BUFFER);
-	if (bytes_r == -1)
-	{
-		dprintf(STDERR_FILENO,"Error: can't read from file %s\n", argv[1]);
-		exit(98);
-	}
-	while(bytes_r > 0)
+	while(bytes_r = read(src_fd, buf, BUFFER) > 0)
 	{
 		bytes_w = write(dest_fd, buf, bytes_r);
 		if (bytes_w == -1)
@@ -46,6 +40,10 @@ int main(int argc, char *argv[])
 			dprintf(STDERR_FILENO, "Error: can't wrtie to file %s\n", argv[2]);
 			exit(99);
 		}
+	}
+	if (bytes_r == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: can't read from file %s\n", argv[1]);
 	}
 	close(src_fd);
 	if (close(src_fd) == -1)
