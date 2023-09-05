@@ -20,13 +20,13 @@ int main(int argc, char *argv[])
 	src_fd = open(argv[1], O_RDONLY);
 	if (src_fd == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: can't read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	dest_fd = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (dest_fd == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: can't write to %s\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
 	while ((bytes_r = read(src_fd, buf, BUFFER)) > 0)
@@ -35,14 +35,14 @@ int main(int argc, char *argv[])
 		{
 			if (bytes_w == -1)
 			{
-				dprintf(STDERR_FILENO, "Error: can't wrtie to %s\n", argv[2]);
+				dprintf(STDERR_FILENO, "Error: Can't wrtie to %s\n", argv[2]);
 				exit(99);
 			}
 		}
 	}
 	if (bytes_r == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: can't read from %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from %s\n", argv[1]);
 		exit(98);
 	}
 	if (close(src_fd) == -1)
