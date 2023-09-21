@@ -1,0 +1,6 @@
+## implementation
+
+get the makenv file take the first argument of the command and use the file as a checker
+check if the access is true on the combinations of the file paths
+if the path is accessable return the path as the path[0];
+if not return a perror of the access as the file or directory not accessable.
