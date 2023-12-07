@@ -2,7 +2,7 @@
 
 /**
  * print_dlistint - prints all elements in DL lists
- * @dlistint_t: DL struct to print
+ * @h: DL struct to print
  * Return: number of nodes in the list
  */
 size_t print_dlistint(const dlistint_t *h)
